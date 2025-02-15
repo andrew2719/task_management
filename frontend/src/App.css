@@ -286,7 +286,7 @@
   .content-grid {
     grid-template-columns: 1sfr;
     padding: 5px;
-    background-color: #0f172a;
+    background-color: transparent;
   }
 
   .tasks-column {
