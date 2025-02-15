@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["https://task-management-nine-mu.vercel.app/"],
+    origin: "https://task-management-nine-mu.vercel.app",
   })
 );
 app.use('/tasks', taskRoutes);
