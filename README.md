@@ -2,7 +2,7 @@
 
 # Task Management Application
 
-You can access the live application [here](https://task-management-nine-mu.vercel.app).
+You can access the live application 🌐 [here](https://task-management-nine-mu.vercel.app).
 
 
 ## Table of Contents
@@ -10,6 +10,7 @@ You can access the live application [here](https://task-management-nine-mu.verce
 - [Setup Instructions In LocalSystem](#setup-instructions-in-localsystem)
     - [Backend Setup](#backend-setup)
     - [Frontend Setup](#frontend-setup)
+- [Deployment in Cloud](#deployement-in-cloud)
 - [Technologies Used](#technologies-used)
 - [Key Features](#key-features)
 - [Project Architecture and Design Decisions](#project-architecture-and-design-decisions)
@@ -19,14 +20,31 @@ You can access the live application [here](https://task-management-nine-mu.verce
 
 ## Setup Instructions In LocalSystem
 
+
+1. *Clone the repository:*
+    ```bash
+    git clone https://github.com/andrew2719/task_management.git
+    ```
+
+2. *Navigate to the project directory:*
+    ```bash
+    cd task_management
+    ```
+
+
 ### Backend Setup
 
-1. *Install dependencies:*
+1. *Navigate to the backend directory:*
+    ```bash
+    cd backend
+    ```
+
+2. *Install dependencies:*
     ```bash
     npm install
     ```
 
-2. *Setup environment variables:*
+3. *Setup environment variables:*
     Create a .env file in the root directory and add the following:
     ```bash
     PORT=3000
@@ -35,7 +53,7 @@ You can access the live application [here](https://task-management-nine-mu.verce
     JWT_SECRET=your_jwt_secret
     ```
 
-3. *Update CORS origins:*
+4. *Update CORS origins:*
     In server.js, add http://localhost:5173 to the allowed origins:
     ```javascript
     app.use(
@@ -45,28 +63,38 @@ You can access the live application [here](https://task-management-nine-mu.verce
     );
     ```
 
-4. *Start the backend server:*
+5. *Start the backend server:*
     ```bash
     npm start
     ```
 
 ### Frontend Setup
 
-1. *Install dependencies:*
+1. *Navigate to the frontend directory:*
+    ```bash
+    cd frontend
+    ```
+
+2. *Install dependencies:*
     ```bash
     npm install
     ```
 
-2. *Configure frontend:*
+3. *Configure frontend:*
     Modify src/config.js to include:
     ```javascript
     export const SERVER_URI = 'http://localhost:3000';
     ```
 
-3. *Start the frontend server:*
+4. *Start the frontend server:*
     ```bash
     npm run dev
     ```
+
+
+### Deployement in Cloud
+
+    To deploy in cloud just replace the end points of local host with the service provider uris
 
 ## Technologies Used
 
