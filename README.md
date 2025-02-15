@@ -1,4 +1,7 @@
 # Task_Management_Application
+
+You can access the live application [here](https://task-management-nine-mu.vercel.app).
+
 ## Setup Instructions
 
 ### Backend Setup
