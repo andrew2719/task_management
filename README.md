@@ -49,9 +49,9 @@ You can access the live application [here](https://task-management-nine-mu.verce
     In `server.js`, add `http://localhost:5173` to the allowed origins:
     ```javascript
     app.use(
-  cors({
-    origin: ["https://localhost:5173"],
-  })
-);
+    cors({
+        origin: ["https://localhost:5173"],
+    })
+    );
     ```
 
